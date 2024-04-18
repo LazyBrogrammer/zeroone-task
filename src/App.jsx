@@ -11,14 +11,14 @@ import { treeData } from './data/treeData';
 
 export default function App() {
   return (
-    <>
+    <div className="container">
       <table>
         <TableHead />
         <TableBody />
       </table>
       <br />
       <br />
-      <Tree data={treeData} />
-    </>
+      <Tree className='tre' data={treeData} />
+    </div>
   );
 }

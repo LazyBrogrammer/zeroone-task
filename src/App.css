@@ -8,16 +8,16 @@ table {
   border: 2px dotted black !important;
   padding: 0.5rem !important;
 }
+.container {
+  margin: 0 auto;
+}
 
-th,
-td {
-  /* text-align: center; */
+
+
+
+.tree {
+  cursor: pointer;
+  width: 600px;
+  margin: 0 auto;
   padding: 1rem;
-  border-bottom: 1px solid var(--main-color);
-}
-tr:hover {
-  background-color: var(--main-color);
-}
-thead {
-  background-color: var(--main-color);
 }

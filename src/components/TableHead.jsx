@@ -23,11 +23,11 @@ const tableColumns = [
 
 export const TableHead = () => {
   return (
-    <thead>
+    <thead className="bg-slate-200">
       <tr>
         {tableColumns.map((item) => {
           return (
-            <th className=" border-gray-300 border-x-2 " key={item.field}>
+            <th className="p-4 border-gray-300 border-x-2 " key={item.field}>
               {item.label}
             </th>
           );

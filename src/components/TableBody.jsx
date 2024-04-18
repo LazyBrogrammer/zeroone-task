@@ -6,8 +6,8 @@ export const TableBody = () => {
     <tbody>
       {tableBodyData.map((data) => {
         return (
-          <tr key={uuidv4()}>
-            <td className=" text-blue-600">{data.name}</td>
+          <tr className="hover:bg-slate-200" key={uuidv4()}>
+            <td className="text-blue-600 p-4">{data.name}</td>
             <td>{data.age}</td>
             <td>{data.address}</td>
             <td>
