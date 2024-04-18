@@ -1,0 +1,23 @@
+:root {
+  --main-color: #dcdcdc;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px dotted black !important;
+  padding: 0.5rem !important;
+}
+
+th,
+td {
+  /* text-align: center; */
+  padding: 1rem;
+  border-bottom: 1px solid var(--main-color);
+}
+tr:hover {
+  background-color: var(--main-color);
+}
+thead {
+  background-color: var(--main-color);
+}
