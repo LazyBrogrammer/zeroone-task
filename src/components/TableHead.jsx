@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const tableColumns = [
   {
     label: 'Name',
@@ -27,7 +29,7 @@ export const TableHead = () => {
       <tr>
         {tableColumns.map((item) => {
           return (
-            <th className="p-4 border-gray-300 border-x-2 " key={item.field}>
+            <th className="p-3 border-gray-300 border-x-2 " key={uuidv4()}>
               {item.label}
             </th>
           );

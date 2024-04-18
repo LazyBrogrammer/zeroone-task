@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const TreeNode = ({ node, isRoot }) => {
+export const TreeNode = ({ node }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -8,8 +8,8 @@ export const TreeNode = ({ node, isRoot }) => {
   };
 
   return (
-    <div className="bg-slate-200 p-1">
-      <div className='hover:bg-slate-300' onClick={handleToggle}>
+    <div className="bg-slate-300 tree">
+      <div className='hover:bg-slate-400 p-2' onClick={handleToggle}>
         {node.children && (
           <i
             className={`${
@@ -20,7 +20,7 @@ export const TreeNode = ({ node, isRoot }) => {
         {node.name}
       </div>
       {isOpen && node.children && (
-        <div className="bg-slate-500 hover:bg-slate-300" style={{ marginLeft: 20 }}>
+        <div style={{ marginLeft: 20 }}>
           {node.children.map((child, index) => (
             <TreeNode key={index} node={child} />
           ))}

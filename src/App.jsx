@@ -18,7 +18,7 @@ export default function App() {
       </table>
       <br />
       <br />
-      <Tree className='tre' data={treeData} />
+      <Tree data={treeData} />
     </div>
   );
 }
